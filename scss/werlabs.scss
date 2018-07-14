@@ -1,16 +1,69 @@
 // Colours //
-// peach: #FF7865
-// pineGreen: #0F5441
-// oceanBlue: #204C63
-// burgundy: #6D475A
-// yellow: #FFD779
+$peach: #ff7865;
+$pineGreen: #0f5441;
+$oceanBlue: #204c63;
+$burgundy: #6d475a;
+$yellow: #ffd779;
+
+// Fonts //
+@font-face {
+  font-family: "Proxima";
+  src: url("./fonts/proxima-nova-regular.woff") format("woff"),
+    url("./fonts/proxima-nova-regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@fontface {
+  font-family: "Proxima";
+  src: url("./fonts/proxima-nova-bold.woff") format("woff"), url("./fonts/proxima-nova-bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@fontface {
+  font-family: "Proxima";
+  src: url("./fonts/proxima-nova-extrabold.woff") format("woff"),
+    url("./fonts/proxima-nova-extrabold.woff2") format("woff2");
+  font-weight: 800;
+}
+
+body {
+  font-family: "Proxima", Fallback, sans-serif;
+  font-weight: regular;
+}
 
 header {
 }
 
 main {
   section:first-child {
-    color: lime;
+    background-image: url("../images/lp-start-hero-comp.jpg");
+    height: 450px;
+    background-position: 175% 0%;
+    background-repeat: no-repeat;
+    background-size: auto 450px;
+  }
+
+  h1 {
+    color: $peach;
+    width: 50%;
+    font-size: 4em;
+    font-weight: 800;
+    span {
+      color: $oceanBlue;
+    }
+  }
+
+  p {
+  }
+
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
   }
 }
 
