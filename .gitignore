@@ -8,6 +8,8 @@
 
 # production
 /build
+/css/werlabs.css
+/css/werlabs.css.map
 
 # misc
 .DS_Store
