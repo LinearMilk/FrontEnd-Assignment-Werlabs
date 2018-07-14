@@ -5,29 +5,53 @@
 // burgundy: #6D475A
 // yellow: #FFD779
 
+header {
+}
+
+main {
+  section:first-child {
+    color: lime;
+  }
+}
+
+.w-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
 // Fonts //
-@font-face{
-    font-family:"Proxima N W01";
-    font-style: normal;
-    font-weight: 400;
-    src: url("fonts/proxima-nova-regular.woff2") format("woff2"),
-    url("fonts/proxima-nova-regular.woff") format("woff");
+@font-face {
+  font-family: "Proxima N W01";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/proxima-nova-regular.woff2") format("woff2"), url("fonts/proxima-nova-regular.woff") format("woff");
 }
-@font-face{
-    font-family:"Proxima N W01";
-    font-style: normal;
-    font-weight: 700;
-    src: url("fonts/proxima-nova-bold.woff2") format("woff2"),
-    url("fonts/proxima-nova-bold.woff") format("woff");
+@font-face {
+  font-family: "Proxima N W01";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/proxima-nova-bold.woff2") format("woff2"), url("fonts/proxima-nova-bold.woff") format("woff");
 }
-@font-face{
-    font-family:"Proxima N W01";
-    font-style: normal;
-    font-weight: 800;
-    src: url("fonts/proxima-nova-extrabold.woff2") format("woff2"),
+@font-face {
+  font-family: "Proxima N W01";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/proxima-nova-extrabold.woff2") format("woff2"),
     url("fonts/proxima-nova-extrabold.woff") format("woff");
 }
 
-
-
 // Assignment Styles //
+
+// media queries //
+
+@media (min-width: 480px) {
+  .w-container {
+    padding: 0 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .w-container {
+    padding: 0 12px;
+  }
+}
