@@ -224,6 +224,23 @@ main {
   }
 }
 
+footer {
+  .footer-column {
+    display: inline-block;
+    width: 19%;
+  }
+  ul {
+    list-style-type: none;
+    li {
+      display: inline-block;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
 // media queries //
 
 @media (min-width: 480px) {
