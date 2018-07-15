@@ -29,6 +29,11 @@ $white: #ffffff;
     url("fonts/proxima-nova-extrabold.woff") format("woff");
 }
 
+// Mixins //
+
+@mixin offer-color($color) {
+}
+
 // Assignment Styles //
 
 body {
@@ -112,8 +117,7 @@ main {
     color: $heroImagetextGray;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    padding-top: 0;
-    z-index: -1;
+    top: 465px;
   }
   .offer {
     margin-top: 0;
@@ -148,11 +152,75 @@ main {
   .burgundy-bckg {
     background-color: $burgundy;
   }
+
   .oceanBlue-bckg {
     background-color: $oceanBlue;
   }
   .pineGreen-bckg {
     background-color: $pineGreen;
+  }
+  ul {
+    list-style-type: none;
+    color: $heroImagetextGray;
+    font-size: 1.25em;
+    a {
+      text-decoration: none;
+      color: $peach;
+    }
+  }
+  li {
+    margin-bottom: 15px;
+  }
+
+  li:before {
+    content: "\2714\0020";
+  }
+
+  button {
+    display: block;
+    background-color: $white;
+    color: $burgundy;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    border: 2px solid $burgundy;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 16px 128px;
+    text-decoration: none;
+  }
+  button:hover {
+    background-color: $burgundy;
+    color: $white;
+  }
+  .show-more {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+    color: $burgundy;
+    margin-top: 20px;
+    margin-left: 37%;
+  }
+  .offer-content {
+    height: 100%;
+  }
+
+  .all-blood-tests {
+    text-align: center;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: $peach;
+      font-size: 1.25em;
+      border-bottom: 1px solid $peach;
+      margin-bottom: 50px;
+      padding-bottom: 10px;
+    }
   }
 }
 
