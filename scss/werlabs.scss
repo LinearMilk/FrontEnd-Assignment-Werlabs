@@ -5,30 +5,33 @@ $oceanBlue: #204c63;
 $burgundy: #6d475a;
 $yellow: #ffd779;
 $linkGray: #7a7a7a;
+$heroImagetextGray: #3d3d3c;
 
 // Fonts //
 @font-face {
-  font-family: "Proxima";
-  src: url("./fonts/proxima-nova-regular.woff") format("woff"),
-    url("./fonts/proxima-nova-regular.woff2") format("woff2");
+  font-family: "Proxima N W01";
+  font-style: normal;
   font-weight: 400;
+  src: url("fonts/proxima-nova-regular.woff2") format("woff2"), url("fonts/proxima-nova-regular.woff") format("woff");
 }
-
-@fontface {
-  font-family: "Proxima";
-  src: url("./fonts/proxima-nova-bold.woff") format("woff"), url("./fonts/proxima-nova-bold.woff2") format("woff2");
+@font-face {
+  font-family: "Proxima N W01";
+  font-style: normal;
   font-weight: 700;
+  src: url("fonts/proxima-nova-bold.woff2") format("woff2"), url("fonts/proxima-nova-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Proxima N W01";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/proxima-nova-extrabold.woff2") format("woff2"),
+    url("fonts/proxima-nova-extrabold.woff") format("woff");
 }
 
-@fontface {
-  font-family: "Proxima";
-  src: url("./fonts/proxima-nova-extrabold.woff") format("woff"),
-    url("./fonts/proxima-nova-extrabold.woff2") format("woff2");
-  font-weight: 800;
-}
+// Assignment Styles //
 
 body {
-  font-family: "Proxima", Fallback, sans-serif;
+  font-family: "Proxima N W01", Fallback, sans-serif;
   font-weight: regular;
 }
 
@@ -65,33 +68,33 @@ header {
 }
 
 main {
-  max-width: 1140px;
-  margin: 0 auto;
   position: relative;
 
-  section:first-child {
+  .hero-image {
     background-image: url("../images/lp-start-hero-comp.jpg");
     height: 450px;
     background-position: 500px 0;
     background-repeat: no-repeat;
     background-size: auto 450px;
 
-    div {
+    .hero-text {
       position: absolute;
-      width: 65%;
-    }
-    h1 {
-      color: $peach;
-
-      font-size: 4em;
-      font-weight: 800;
-      span {
-        color: $oceanBlue;
+      width: 40%;
+      h1 {
+        color: $peach;
+        font-size: 4em;
+        font-weight: 800;
+        margin-bottom: 25px;
+        span {
+          color: $oceanBlue;
+        }
       }
-    }
 
-    p {
-      width: 80%;
+      p {
+        width: 90%;
+        font-size: 1.5em;
+        color: $heroImagetextGray;
+      }
     }
   }
 
@@ -109,34 +112,11 @@ main {
       }
       div:only-child {
         width: 100px;
-        height: ;
+        height: 60px;
       }
     }
   }
 }
-
-// Fonts //
-@font-face {
-  font-family: "Proxima N W01";
-  font-style: normal;
-  font-weight: 400;
-  src: url("fonts/proxima-nova-regular.woff2") format("woff2"), url("fonts/proxima-nova-regular.woff") format("woff");
-}
-@font-face {
-  font-family: "Proxima N W01";
-  font-style: normal;
-  font-weight: 700;
-  src: url("fonts/proxima-nova-bold.woff2") format("woff2"), url("fonts/proxima-nova-bold.woff") format("woff");
-}
-@font-face {
-  font-family: "Proxima N W01";
-  font-style: normal;
-  font-weight: 800;
-  src: url("fonts/proxima-nova-extrabold.woff2") format("woff2"),
-    url("fonts/proxima-nova-extrabold.woff") format("woff");
-}
-
-// Assignment Styles //
 
 // media queries //
 
