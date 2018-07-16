@@ -166,6 +166,16 @@ main {
     background-color: $pineGreen;
   }
 
+  .burgundy {
+    color: $burgundy;
+  }
+  .oceanBlue {
+    color: $oceanBlue;
+  }
+  .pineGreen {
+    color: $pineGreen;
+  }
+
   ul {
     list-style-type: none;
     color: $heroImagetextGray;
@@ -225,7 +235,6 @@ main {
     text-decoration: none;
     font-weight: 700;
     font-size: 1em;
-    color: $burgundy;
     margin-top: 20px;
   }
   .offer-content {
