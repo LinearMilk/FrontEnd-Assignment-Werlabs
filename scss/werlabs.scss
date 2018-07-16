@@ -77,6 +77,10 @@ header {
 main {
   position: relative;
 
+  .bottom-padding {
+    padding-bottom: 150px;
+  }
+
   .hero-image {
     background-image: url("../images/lp-start-hero-comp.jpg");
     height: 450px;
