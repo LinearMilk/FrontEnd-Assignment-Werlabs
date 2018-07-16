@@ -29,7 +29,7 @@ gulp.task("scss", function() {
 
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("css"))
-    .pipe(connect.reload()); //TODO fix live reload
+    .pipe(connect.reload());
 });
 
 // Watch
