@@ -75,13 +75,13 @@ main {
       }
       a {
         display: inline-block;
-
         font-size: 1.25em;
         font-weight: 400;
         color: $white;
       }
     }
   }
+
   .burgundy-bckg {
     background-color: $burgundy;
   }
@@ -205,6 +205,46 @@ main {
       font-weight: 400;
       padding-left: 60px;
       padding-right: 60px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    position: relative;
+
+    .hero-image {
+      margin-top: 140px;
+      background-image: url("../images/lp-start-hero-small-comp.jpg");
+      height: 450px;
+      background-position: 0px 0;
+
+      .hero-text {
+        position: relative;
+        top: -140px;
+        width: 100%;
+        h1 {
+          font-size: 2.5em;
+          font-weight: 800;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          span {
+            color: $oceanBlue;
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+        }
+
+        p {
+          width: 90%;
+          font-size: 1em;
+        }
+      }
+    }
+    .offer {
+      display: inline-block;
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
 }

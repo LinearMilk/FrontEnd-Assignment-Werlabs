@@ -19,3 +19,34 @@ header {
     }
   }
 }
+
+@media (max-width: 480px) {
+  nav {
+  }
+
+  header {
+    height: 40px;
+    border-bottom: 1px solid $linkGray;
+
+    nav {
+      visibility: hidden;
+    }
+
+    .logo img {
+      display: block;
+      margin: 25px 0px auto auto;
+      padding-left: 18px;
+      float: left;
+      width: 300px;
+      height: auto;
+    }
+
+    a .js-nav-toggle {
+      display: inline-block;
+      span {
+        text-decoration: none;
+        color: $linkGray;
+      }
+    }
+  }
+}
