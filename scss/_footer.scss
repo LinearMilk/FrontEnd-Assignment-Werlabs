@@ -1,0 +1,82 @@
+footer {
+  .footer-column {
+    display: inline-block;
+    width: 220px;
+    position: relative;
+    vertical-align: top;
+  }
+  .social {
+    display: inline-block;
+  }
+  .my-journal {
+    position: relative;
+    top: auto;
+    background-color: $white;
+    color: $peach;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    border: 2px solid $peach;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .no-padding {
+    padding: 0;
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+
+    li {
+      padding-bottom: 15px;
+      img {
+        width: 30px;
+        height: 30px;
+        -webkit-filter: grayscale(100%) brightness(60%) contrast(10000000%);
+        opacity: 0.2;
+
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      a {
+        color: $textGray;
+        font-size: 1em;
+      }
+    }
+  }
+  .logo-copyright {
+    position: relative;
+    vertical-align: bottom;
+    margin-bottom: 16px;
+    img {
+      display: block;
+      margin: auto;
+    }
+    p {
+      color: $copyrightGray;
+      text-align: center;
+      font-size: 0.7em;
+      font-weight: 400;
+    }
+  }
+
+  .klarna {
+    p {
+      text-align: center;
+      color: $linkGray;
+    }
+    img {
+      display: block;
+      margin: auto;
+      width: 100px;
+    }
+  }
+}
