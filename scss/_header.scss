@@ -1,15 +1,16 @@
 header {
   .logo {
-    display: block;
-    margin: 25px 0px auto auto;
-    padding-left: 18px;
+    display: inline-block;
+    margin: 15px 0px 15px 5px;
   }
 
   nav {
     overflow: hidden;
     float: right;
+
     ul {
       list-style-type: none;
+      float: right;
       li {
         display: inline-block;
         margin-right: 20px;
