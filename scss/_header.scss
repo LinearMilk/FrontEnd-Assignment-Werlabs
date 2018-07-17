@@ -1,10 +1,8 @@
 header {
-  height: 75px;
-  .logo img {
+  .logo {
     display: block;
     margin: 25px 0px auto auto;
     padding-left: 18px;
-    float: left;
   }
 
   nav {
@@ -25,27 +23,28 @@ header {
   }
 
   header {
-    height: 40px;
-    border-bottom: 1px solid $linkGray;
+    border-bottom: 1px solid #e0e0e0;
 
     nav {
       visibility: hidden;
     }
 
-    .logo img {
-      display: block;
-      margin: 25px 0px auto auto;
+    .logo {
+      display: inline-block;
+      margin: 18px 18px 18px 0;
       padding-left: 18px;
-      float: left;
-      width: 300px;
       height: auto;
     }
 
-    a .js-nav-toggle {
+    .js-nav-toggle {
       display: inline-block;
       span {
         text-decoration: none;
         color: $linkGray;
+        position: absolute;
+        right: 25px;
+        top: 20px;
+        font-size: 1.75em;
       }
     }
   }

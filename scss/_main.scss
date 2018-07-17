@@ -46,6 +46,11 @@ main {
     border-top-left-radius: 5px;
     position: relative;
     top: -25px;
+    span {
+      position: absolute;
+      left: 18px;
+      top: 4px;
+    }
   }
 
   .offer {
@@ -220,8 +225,8 @@ main {
     .hero-image {
       margin-top: 140px;
       background-image: url("../images/lp-start-hero-small-comp.jpg");
-      height: 480px;
-      background-position: 0 30px;
+      height: 470px;
+      background-position: 0;
 
       .hero-text {
         position: relative;
