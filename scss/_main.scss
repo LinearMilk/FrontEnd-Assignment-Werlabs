@@ -80,6 +80,11 @@ main {
         color: $white;
       }
     }
+    .checkmark-list {
+      li:before {
+        content: "\2714\0020";
+      }
+    }
   }
 
   .burgundy-bckg {
@@ -113,10 +118,6 @@ main {
   }
   li {
     margin-bottom: 15px;
-  }
-
-  li:before {
-    content: "\2714\0020";
   }
 
   .burgundy-btn {
@@ -243,8 +244,9 @@ main {
     }
     .offer {
       display: inline-block;
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 18px;
+      padding-right: 18px;
+      height: 420px;
     }
   }
 }
