@@ -34,7 +34,7 @@ gulp.task("scss", function() {
 
 // Watch
 gulp.task("watch", function() {
-  gulp.watch(["scss/werlabs.scss"], ["scss"]);
+  gulp.watch(["scss/*.scss"], ["scss"]);
 });
 
 gulp.task("default", ["scss", "webserver", "watch"]);
