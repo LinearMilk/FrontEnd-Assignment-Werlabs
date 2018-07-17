@@ -84,5 +84,17 @@ footer {
 @media (max-width: 480px) {
   footer {
     text-align: center;
+
+    ul {
+      padding: 0;
+    }
+    .no-padding {
+      position: absolute;
+      bottom: -990px;
+      margin-left: 30px;
+    }
+    .logo-copyright {
+      padding-bottom: 180px;
+    }
   }
 }
