@@ -2,7 +2,9 @@ main {
   position: relative;
 
   .bottom-padding {
-    padding-bottom: 150px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    margin-top: 40px;
   }
 
   .hero-image {
@@ -14,7 +16,7 @@ main {
 
     .hero-text {
       position: absolute;
-      width: 40%;
+      width: 500px;
       h1 {
         color: $peach;
         font-size: 4em;
@@ -32,10 +34,13 @@ main {
     }
   }
 
+  .wave {
+    background-position: -300px 160px;
+  }
+
   .most-popular-label {
     width: 125px;
     display: inline-block;
-    float: left;
     height: 25px;
     background-color: $yellow;
     text-transform: uppercase;
@@ -44,8 +49,16 @@ main {
     font-size: 0.75em;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    position: relative;
-    top: -25px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: -1;
+
+    span {
+      position: absolute;
+      left: 18px;
+      top: 4px;
+    }
   }
 
   .offer {
@@ -56,11 +69,10 @@ main {
     padding-top: 50px;
     height: 500px;
     width: 350px;
-    padding-left: 11px;
-    padding-right: 11px;
+    padding-right: 30px;
+
     .headline {
       height: 125px;
-      width: 96%;
       padding-left: 25px;
       padding-top: 2px;
       text-align: left;
@@ -75,13 +87,22 @@ main {
       }
       a {
         display: inline-block;
-
         font-size: 1.25em;
         font-weight: 400;
         color: $white;
       }
     }
+    .checkmark-list {
+      background-color: $white;
+      margin-top: 0;
+      padding-top: 30px;
+
+      li:before {
+        content: "\2714\0020";
+      }
+    }
   }
+
   .burgundy-bckg {
     background-color: $burgundy;
   }
@@ -105,18 +126,16 @@ main {
 
   ul {
     list-style-type: none;
-    font-size: 1.25em;
+    font-size: 1.1em;
     text-align: left;
+    min-height: 150px;
+
     a {
       color: $peach;
     }
   }
   li {
     margin-bottom: 15px;
-  }
-
-  li:before {
-    content: "\2714\0020";
   }
 
   .burgundy-btn {
@@ -133,11 +152,6 @@ main {
     border: 2px solid $pineGreen;
   }
 
-  button a.pineGreen-bt:hover {
-    background-color: $pineGreen;
-    color: $white;
-  }
-
   button {
     background-color: $white;
     -moz-border-radius: 28px;
@@ -147,7 +161,7 @@ main {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 0.85em;
     padding: 16px 128px;
     text-decoration: none;
   }
@@ -157,17 +171,29 @@ main {
     background-color: $burgundy;
   }
 
+  button.oceanBlue-btn:hover {
+    background-color: $oceanBlue;
+    color: $white;
+  }
+
+  button.pineGreen-btn:hover {
+    background-color: $pineGreen;
+    color: $white;
+  }
+
   .show-more {
     display: inline-block;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 0.75em;
     margin-top: 20px;
   }
 
   .offer-content {
     postion: relative;
+    background-color: $white;
+    padding-bottom: 25px;
   }
 
   .offer-display {
@@ -177,13 +203,12 @@ main {
 
   .all-blood-tests {
     text-align: center;
-    text-align: center;
     a {
       color: $peach;
-      font-size: 1.25em;
+      font-size: 1em;
       border-bottom: 1px solid $peach;
       margin-bottom: 50px;
-      padding-bottom: 10px;
+      padding-bottom: 5px;
     }
   }
 
@@ -205,6 +230,77 @@ main {
       font-weight: 400;
       padding-left: 60px;
       padding-right: 60px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 0;
+  }
+  main {
+    position: relative;
+
+    .wave {
+      background-size: cover;
+      background-position: -2000px 10px;
+    }
+
+    .hero-image {
+      margin-top: 140px;
+      background-image: url("../images/lp-start-hero-small-comp.jpg");
+      height: 470px;
+      background-position: 0;
+
+      .hero-text {
+        position: relative;
+        top: -140px;
+        width: 100%;
+        padding-left: 18px;
+        h1 {
+          font-size: 2.5em;
+          font-weight: 800;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          position: absolute;
+
+          span {
+            color: $oceanBlue;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            position: absolute;
+            top: 30px;
+            font-size: 1em;
+            width: 330px;
+          }
+        }
+
+        p {
+          width: 65%;
+          font-size: 1em;
+          position: absolute;
+          top: 105px;
+        }
+      }
+    }
+
+    .offer {
+      display: inline-block;
+      padding-left: 18px;
+      padding-right: 18px;
+      height: 420px;
+      width: 330px;
+    }
+    .offer:last-child {
+      display: none;
+    }
+
+    .all-blood-tests {
+      margin-top: 60px;
+    }
+
+    .most-popular-label {
+      left: 18px;
     }
   }
 }

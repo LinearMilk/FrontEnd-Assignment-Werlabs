@@ -31,69 +31,21 @@ a:hover {
   padding: 0 18px;
 }
 
+.wave {
+  background-image: url("../images/blood-tests-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 0 160px;
+}
+
 // media queries //
 
 @media (max-width: 480px) {
-  nav {
+  footer {
+    background-size: 0px;
   }
 
-  header {
-    height: 40px;
-    border-bottom: 1px solid $linkGray;
-
-    nav {
-      visibility: hidden;
-    }
-
-    .logo img {
-      display: block;
-      margin: 25px 0px auto auto;
-      padding-left: 18px;
-      float: left;
-      width: 300px;
-      height: auto;
-    }
-
-    a .js-nav-toggle {
-      display: inline-block;
-      span {
-        text-decoration: none;
-        color: $linkGray;
-      }
-    }
-  }
-
-  main {
-    position: relative;
-
-    .hero-image {
-      margin-top: 140px;
-      background-image: url("../images/lp-start-hero-small-comp.jpg");
-      height: 650px;
-      background-position: 0px 0;
-
-      .hero-text {
-        position: relative;
-        top: -140px;
-        width: 100%;
-        h1 {
-          font-size: 2.5em;
-          font-weight: 800;
-          margin-top: 5px;
-          margin-bottom: 5px;
-          span {
-            color: $oceanBlue;
-            margin-top: 5px;
-            margin-bottom: 5px;
-          }
-        }
-
-        p {
-          width: 90%;
-          font-size: 1em;
-        }
-      }
-    }
+  .w-container {
+    padding: 0;
   }
 }
 
