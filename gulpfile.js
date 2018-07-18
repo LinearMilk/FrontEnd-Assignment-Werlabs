@@ -32,9 +32,18 @@ gulp.task("scss", function() {
     .pipe(connect.reload());
 });
 
+// HTML
+gulp.task("html", function() {
+  gulp
+    .src("index.html")
+    .pipe(gulp.dest("./"))
+    .pipe(connect.reload());
+});
+
 // Watch
 gulp.task("watch", function() {
   gulp.watch(["scss/*.scss"], ["scss"]);
+  gulp.watch(["index.html"], ["html"]);
 });
 
 gulp.task("default", ["scss", "webserver", "watch"]);
