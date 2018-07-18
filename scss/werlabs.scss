@@ -3,19 +3,19 @@
 @import "main";
 @import "footer";
 
-// Mixins //
-@mixinoffer-color ($color) {
-}
-
 // Assignment Styles //
 
 body {
   font-family: "Proxima N W01", Fallback, sans-serif;
   font-weight: regular;
   color: $textGray;
-
   @media ($mobile) {
     margin: 0;
+  }
+  footer {
+    @media ($mobile) {
+      background-size: 0px;
+    }
   }
 }
 
@@ -33,24 +33,15 @@ a:hover {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 18px;
+  @media ($mobile) {
+    padding: 0;
+  }
 }
 
 .wave {
   background-image: url("../images/blood-tests-bg.svg");
   background-repeat: no-repeat;
   background-position: 0 160px;
-}
-
-// media queries //
-
-@media (max-width: 480px) {
-  footer {
-    background-size: 0px;
-  }
-
-  .w-container {
-    padding: 0;
-  }
 }
 
 @media (min-width: 480px) {
@@ -62,10 +53,5 @@ a:hover {
   }
   .slick-dots {
     visibility: hidden;
-  }
-}
-@media (min-width: 1200px) {
-  .w-container {
-    padding: 0 12px;
   }
 }
