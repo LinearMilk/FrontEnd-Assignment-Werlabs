@@ -29,17 +29,17 @@ main {
     text-decoration: none;
   }
 
-  button.burgundy-btn:hover {
+  button.primary-color-btn:hover {
     color: $white;
     background-color: $burgundy;
   }
 
-  button.oceanBlue-btn:hover {
+  button.secondary-color-btn:hover {
     background-color: $oceanBlue;
     color: $white;
   }
 
-  button.pineGreen-btn:hover {
+  button.tertiary-color-btn:hover {
     background-color: $pineGreen;
     color: $white;
   }
@@ -198,37 +198,37 @@ main {
     }
   }
 
-  .burgundy {
+  .primary-color {
     color: $burgundy;
   }
-  .oceanBlue {
+  .secondary-color {
     color: $oceanBlue;
   }
-  .pineGreen {
+  .tertiary-color {
     color: $pineGreen;
   }
 
-  .burgundy-bckg {
+  .primary-color-bckg {
     background-color: $burgundy;
   }
 
-  .oceanBlue-bckg {
+  .secondary-color-bckg {
     background-color: $oceanBlue;
   }
-  .pineGreen-bckg {
+  .tertiary-color-bckg {
     background-color: $pineGreen;
   }
 
-  .burgundy-btn {
+  .primary-color-btn {
     color: $burgundy;
     border: 2px solid $burgundy;
   }
 
-  .oceanBlue-btn {
+  .secondary-color-btn {
     color: $oceanBlue;
     border: 2px solid $oceanBlue;
   }
-  .pineGreen-btn {
+  .tertiary-color-btn {
     color: $pineGreen;
     border: 2px solid $pineGreen;
   }
