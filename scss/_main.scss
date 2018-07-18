@@ -42,12 +42,26 @@ main {
         }
         span {
           color: $oceanBlue;
+          @media ($mobile) {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            position: absolute;
+            top: 30px;
+            font-size: 1em;
+            width: 330px;
+          }
         }
       }
 
       p {
         width: 90%;
         font-size: 1.5em;
+        @media ($mobile) {
+          width: 65%;
+          font-size: 1em;
+          position: absolute;
+          top: 105px;
+        }
       }
     }
   }
@@ -75,6 +89,9 @@ main {
     top: 25px;
     left: 0;
     z-index: -1;
+    @media ($mobile) {
+      left: 18px;
+    }
 
     span {
       position: absolute;
@@ -133,15 +150,10 @@ main {
     }
   }
 
-  .burgundy-bckg {
-    background-color: $burgundy;
-  }
-
-  .oceanBlue-bckg {
-    background-color: $oceanBlue;
-  }
-  .pineGreen-bckg {
-    background-color: $pineGreen;
+  @media ($mobile) {
+    .offer:last-child {
+      display: none;
+    }
   }
 
   .burgundy {
@@ -154,18 +166,15 @@ main {
     color: $pineGreen;
   }
 
-  ul {
-    list-style-type: none;
-    font-size: 1.1em;
-    text-align: left;
-    min-height: 150px;
-
-    a {
-      color: $peach;
-    }
+  .burgundy-bckg {
+    background-color: $burgundy;
   }
-  li {
-    margin-bottom: 15px;
+
+  .oceanBlue-bckg {
+    background-color: $oceanBlue;
+  }
+  .pineGreen-bckg {
+    background-color: $pineGreen;
   }
 
   .burgundy-btn {
@@ -180,6 +189,20 @@ main {
   .pineGreen-btn {
     color: $pineGreen;
     border: 2px solid $pineGreen;
+  }
+
+  ul {
+    list-style-type: none;
+    font-size: 1.1em;
+    text-align: left;
+    min-height: 150px;
+
+    a {
+      color: $peach;
+    }
+  }
+  li {
+    margin-bottom: 15px;
   }
 
   button {
@@ -233,6 +256,9 @@ main {
 
   .all-blood-tests {
     text-align: center;
+    @media ($mobile) {
+      margin-top: 60px;
+    }
     a {
       color: $peach;
       font-size: 1em;
@@ -260,47 +286,6 @@ main {
       font-weight: 400;
       padding-left: 60px;
       padding-right: 60px;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  main {
-    .hero-image {
-      .hero-text {
-        h1 {
-          span {
-            color: $oceanBlue;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            position: absolute;
-            top: 30px;
-            font-size: 1em;
-            width: 330px;
-          }
-        }
-
-        p {
-          width: 65%;
-          font-size: 1em;
-          position: absolute;
-          top: 105px;
-        }
-      }
-    }
-
-    .offer {
-    }
-    .offer:last-child {
-      display: none;
-    }
-
-    .all-blood-tests {
-      margin-top: 60px;
-    }
-
-    .most-popular-label {
-      left: 18px;
     }
   }
 }
