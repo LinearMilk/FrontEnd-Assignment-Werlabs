@@ -1,5 +1,5 @@
 footer {
-  @media $mobile {
+  @media ($mobile) {
     text-align: center;
   }
   .footer-column {
@@ -29,7 +29,7 @@ footer {
     width: 200px;
     text-align: center;
     margin-top: 16px;
-    @media $mobile {
+    @media ($mobile) {
       margin-bottom: 50px;
     }
   }
@@ -37,7 +37,7 @@ footer {
   .no-padding {
     padding: 0;
     text-align: center;
-    @media $mobile {
+    @media ($mobile) {
       position: absolute;
       bottom: -990px;
       margin-left: 30px;
@@ -46,7 +46,7 @@ footer {
   ul {
     list-style-type: none;
     padding-left: 60px;
-    @media $mobile {
+    @media ($mobile) {
       padding: 0;
     }
 
@@ -64,7 +64,7 @@ footer {
       a {
         color: $textGray;
         font-size: 0.85em;
-        @media $mobile {
+        @media ($mobile) {
           font-size: 1em;
         }
       }
@@ -74,7 +74,7 @@ footer {
     position: relative;
     vertical-align: bottom;
     margin-bottom: 16px;
-    @media $mobile {
+    @media ($mobile) {
       padding-bottom: 50px;
     }
     img {

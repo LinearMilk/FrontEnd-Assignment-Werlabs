@@ -1,12 +1,12 @@
 header {
-  @media $mobile {
+  @media ($mobile) {
     border-bottom: 1px solid #e0e0e0;
   }
 
   .logo {
     display: inline-block;
     margin: 15px 0px 15px 5px;
-    @media $mobile {
+    @media ($mobile) {
       margin: 18px 18px 18px 0;
       padding-left: 18px;
       height: auto;
@@ -16,7 +16,7 @@ header {
   nav {
     overflow: hidden;
     float: right;
-    @media $mobile {
+    @media ($mobile) {
       visibility: hidden;
     }
 
@@ -29,7 +29,7 @@ header {
       }
     }
   }
-  @media $mobile {
+  @media ($mobile) {
     .js-nav-toggle {
       display: inline-block;
       span {

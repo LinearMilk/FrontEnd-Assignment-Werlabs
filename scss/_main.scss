@@ -36,6 +36,10 @@ main {
 
   .wave {
     background-position: -300px 160px;
+    @media ($mobile) {
+      background-size: cover;
+      background-position: -2000px 10px;
+    }
   }
 
   .most-popular-label {
@@ -70,6 +74,14 @@ main {
     height: 500px;
     width: 350px;
     padding-right: 30px;
+
+    @media ($mobile) {
+      display: inline-block;
+      padding-left: 18px;
+      padding-right: 18px;
+      height: 420px;
+      width: 330px;
+    }
 
     .headline {
       height: 125px;
@@ -242,8 +254,6 @@ main {
     position: relative;
 
     .wave {
-      background-size: cover;
-      background-position: -2000px 10px;
     }
 
     .hero-image {
@@ -285,11 +295,6 @@ main {
     }
 
     .offer {
-      display: inline-block;
-      padding-left: 18px;
-      padding-right: 18px;
-      height: 420px;
-      width: 330px;
     }
     .offer:last-child {
       display: none;
