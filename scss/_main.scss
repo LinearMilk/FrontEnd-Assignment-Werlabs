@@ -35,10 +35,7 @@ main {
   }
 
   .wave {
-    background-image: url("../images/blood-tests-bg.svg");
-    background-position: 0px 160px;
-    background-repeat: no-repeat;
-    //TODO finish the image position
+    background-position: -300px 160px;
   }
 
   .most-popular-label {
@@ -196,6 +193,7 @@ main {
   .offer-content {
     postion: relative;
     background-color: $white;
+    padding-bottom: 25px;
   }
 
   .offer-display {
@@ -204,7 +202,6 @@ main {
   }
 
   .all-blood-tests {
-    text-align: center;
     text-align: center;
     a {
       color: $peach;
@@ -243,6 +240,11 @@ main {
   }
   main {
     position: relative;
+
+    .wave {
+      background-size: cover;
+      background-position: -2000px 10px;
+    }
 
     .hero-image {
       margin-top: 140px;
@@ -291,6 +293,10 @@ main {
     }
     .offer:last-child {
       display: none;
+    }
+
+    .all-blood-tests {
+      margin-top: 60px;
     }
 
     .most-popular-label {

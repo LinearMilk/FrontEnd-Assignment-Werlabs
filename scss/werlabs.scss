@@ -31,9 +31,19 @@ a:hover {
   padding: 0 18px;
 }
 
+.wave {
+  background-image: url("../images/blood-tests-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 0 160px;
+}
+
 // media queries //
 
 @media (max-width: 480px) {
+  footer {
+    background-size: 0px;
+  }
+
   .w-container {
     padding: 0;
   }
