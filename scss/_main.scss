@@ -13,15 +13,33 @@ main {
     background-position: 500px 0;
     background-repeat: no-repeat;
     background-size: auto 450px;
+    @media ($mobile) {
+      margin-top: 140px;
+      background-image: url("../images/lp-start-hero-small-comp.jpg");
+      height: 470px;
+      background-position: 0;
+    }
 
     .hero-text {
       position: absolute;
       width: 500px;
+      @media ($mobile) {
+        position: relative;
+        top: -140px;
+        width: 100%;
+        padding-left: 18px;
+      }
       h1 {
         color: $peach;
         font-size: 4em;
         font-weight: 800;
         margin-bottom: 25px;
+        @media ($mobile) {
+          font-size: 2.5em;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          position: absolute;
+        }
         span {
           color: $oceanBlue;
         }
@@ -247,33 +265,10 @@ main {
 }
 
 @media (max-width: 480px) {
-  body {
-    margin: 0;
-  }
   main {
-    position: relative;
-
-    .wave {
-    }
-
     .hero-image {
-      margin-top: 140px;
-      background-image: url("../images/lp-start-hero-small-comp.jpg");
-      height: 470px;
-      background-position: 0;
-
       .hero-text {
-        position: relative;
-        top: -140px;
-        width: 100%;
-        padding-left: 18px;
         h1 {
-          font-size: 2.5em;
-          font-weight: 800;
-          margin-top: 5px;
-          margin-bottom: 5px;
-          position: absolute;
-
           span {
             color: $oceanBlue;
             margin-top: 5px;

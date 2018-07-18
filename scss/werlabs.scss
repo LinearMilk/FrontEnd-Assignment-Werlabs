@@ -13,6 +13,10 @@ body {
   font-family: "Proxima N W01", Fallback, sans-serif;
   font-weight: regular;
   color: $textGray;
+
+  @media ($mobile) {
+    margin: 0;
+  }
 }
 
 a {
