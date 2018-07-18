@@ -1,7 +1,50 @@
 main {
   position: relative;
 
-  .bottom-padding {
+  ul {
+    list-style-type: none;
+    font-size: 1.1em;
+    text-align: left;
+    min-height: 150px;
+
+    a {
+      color: $peach;
+    }
+  }
+  li {
+    margin-bottom: 15px;
+  }
+
+  button {
+    background-color: $white;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.85em;
+    padding: 16px 128px;
+    text-decoration: none;
+  }
+
+  button.burgundy-btn:hover {
+    color: $white;
+    background-color: $burgundy;
+  }
+
+  button.oceanBlue-btn:hover {
+    background-color: $oceanBlue;
+    color: $white;
+  }
+
+  button.pineGreen-btn:hover {
+    background-color: $pineGreen;
+    color: $white;
+  }
+
+  .offer-display {
     margin-bottom: 100px;
     padding-bottom: 50px;
     margin-top: 40px;
@@ -13,29 +56,64 @@ main {
     background-position: 500px 0;
     background-repeat: no-repeat;
     background-size: auto 450px;
+    @media ($mobile) {
+      margin-top: 140px;
+      background-image: url("../images/lp-start-hero-small-comp.jpg");
+      height: 470px;
+      background-position: 0;
+    }
 
     .hero-text {
       position: absolute;
       width: 500px;
+      @media ($mobile) {
+        position: relative;
+        top: -140px;
+        width: 100%;
+        padding-left: 18px;
+      }
       h1 {
         color: $peach;
         font-size: 4em;
         font-weight: 800;
         margin-bottom: 25px;
+        @media ($mobile) {
+          font-size: 2.5em;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          position: absolute;
+        }
         span {
           color: $oceanBlue;
+          @media ($mobile) {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            position: absolute;
+            top: 30px;
+            font-size: 1em;
+            width: 330px;
+          }
         }
       }
-
       p {
         width: 90%;
         font-size: 1.5em;
+        @media ($mobile) {
+          width: 65%;
+          font-size: 1em;
+          position: absolute;
+          top: 105px;
+        }
       }
     }
   }
 
   .wave {
     background-position: -300px 160px;
+    @media ($mobile) {
+      background-size: cover;
+      background-position: -2000px 10px;
+    }
   }
 
   .most-popular-label {
@@ -53,6 +131,9 @@ main {
     top: 25px;
     left: 0;
     z-index: -1;
+    @media ($mobile) {
+      left: 18px;
+    }
 
     span {
       position: absolute;
@@ -70,6 +151,14 @@ main {
     height: 500px;
     width: 350px;
     padding-right: 30px;
+
+    @media ($mobile) {
+      display: inline-block;
+      padding-left: 18px;
+      padding-right: 18px;
+      height: 420px;
+      width: 330px;
+    }
 
     .headline {
       height: 125px;
@@ -103,15 +192,10 @@ main {
     }
   }
 
-  .burgundy-bckg {
-    background-color: $burgundy;
-  }
-
-  .oceanBlue-bckg {
-    background-color: $oceanBlue;
-  }
-  .pineGreen-bckg {
-    background-color: $pineGreen;
+  .offer:last-child {
+    @media ($mobile) {
+      display: none;
+    }
   }
 
   .burgundy {
@@ -124,18 +208,15 @@ main {
     color: $pineGreen;
   }
 
-  ul {
-    list-style-type: none;
-    font-size: 1.1em;
-    text-align: left;
-    min-height: 150px;
-
-    a {
-      color: $peach;
-    }
+  .burgundy-bckg {
+    background-color: $burgundy;
   }
-  li {
-    margin-bottom: 15px;
+
+  .oceanBlue-bckg {
+    background-color: $oceanBlue;
+  }
+  .pineGreen-bckg {
+    background-color: $pineGreen;
   }
 
   .burgundy-btn {
@@ -150,35 +231,6 @@ main {
   .pineGreen-btn {
     color: $pineGreen;
     border: 2px solid $pineGreen;
-  }
-
-  button {
-    background-color: $white;
-    -moz-border-radius: 28px;
-    -webkit-border-radius: 28px;
-    border-radius: 28px;
-    display: inline-block;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 0.85em;
-    padding: 16px 128px;
-    text-decoration: none;
-  }
-
-  button.burgundy-btn:hover {
-    color: $white;
-    background-color: $burgundy;
-  }
-
-  button.oceanBlue-btn:hover {
-    background-color: $oceanBlue;
-    color: $white;
-  }
-
-  button.pineGreen-btn:hover {
-    background-color: $pineGreen;
-    color: $white;
   }
 
   .show-more {
@@ -196,13 +248,16 @@ main {
     padding-bottom: 25px;
   }
 
-  .offer-display {
+  .offers {
     display: table-row;
     padding-bottom: 170px;
   }
 
   .all-blood-tests {
     text-align: center;
+    @media ($mobile) {
+      margin-top: 60px;
+    }
     a {
       color: $peach;
       font-size: 1em;
@@ -230,77 +285,6 @@ main {
       font-weight: 400;
       padding-left: 60px;
       padding-right: 60px;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    margin: 0;
-  }
-  main {
-    position: relative;
-
-    .wave {
-      background-size: cover;
-      background-position: -2000px 10px;
-    }
-
-    .hero-image {
-      margin-top: 140px;
-      background-image: url("../images/lp-start-hero-small-comp.jpg");
-      height: 470px;
-      background-position: 0;
-
-      .hero-text {
-        position: relative;
-        top: -140px;
-        width: 100%;
-        padding-left: 18px;
-        h1 {
-          font-size: 2.5em;
-          font-weight: 800;
-          margin-top: 5px;
-          margin-bottom: 5px;
-          position: absolute;
-
-          span {
-            color: $oceanBlue;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            position: absolute;
-            top: 30px;
-            font-size: 1em;
-            width: 330px;
-          }
-        }
-
-        p {
-          width: 65%;
-          font-size: 1em;
-          position: absolute;
-          top: 105px;
-        }
-      }
-    }
-
-    .offer {
-      display: inline-block;
-      padding-left: 18px;
-      padding-right: 18px;
-      height: 420px;
-      width: 330px;
-    }
-    .offer:last-child {
-      display: none;
-    }
-
-    .all-blood-tests {
-      margin-top: 60px;
-    }
-
-    .most-popular-label {
-      left: 18px;
     }
   }
 }
